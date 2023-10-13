@@ -37,7 +37,7 @@ const SignIn = () => {
             const auth = getAuth();
             const userCredentials = await signInWithEmailAndPassword(auth, email, password)
 
-            if (userCredentials) {
+            if (userCredentials.user) {
                 navigate("/")
             }
         } catch (error) {
