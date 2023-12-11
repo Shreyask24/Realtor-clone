@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  background-color: #ffff;
+  width: auto;
+  height: 100vh;
+}
+
+nav {
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10vh;
+  /* flex-wrap: wrap;
+  justify-content: space-evenly; */
+
+}
+
+.navbarText a {
+  padding: 20px;
+  text-decoration: none;
+
+}
+
+.navbarList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.searchBar {
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  height: 40px;
+  background: #F8F9FA;
+  mix-blend-mode: normal;
+  border: 1px solid #EBEDF0;
+  border-radius: 8px;
+
+}
+
+.searchBar:placeholder-shown {
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  opacity: 50%;
+}
+
+#searchBarFill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 22px;
+  background-color: #8064A2;
+  color: white;
+  width: 30px;
+  height: 40px;
+  left: 69vh;
+  top: 19px;
+  background: #8064A2;
+  border-radius: 0px 8px 8px 0px;
+
+}
+
+
+#signIn {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 112px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #8064A2;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8064A2;
+
+}
+
+
+
+
+
+
+
+
+/* Home Styling */
+
+.homeLayout {
+  background-color: #F7F5F9;
+  width: 100vw;
+  height: 40vw;
+}
+
+
+.homeTitle {
+  padding-top: 3vw;
+  margin-left: 3vw;
+  width: 580px;
+  height: 54px;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.02em;
+
+}
+
+.homeText {
+  margin-left: 3vw;
+  width: 706px;
+  height: 120px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.homeSvg {
+  margin-left: 3vw;
+}
+
+
+
+.homeForm {
+  position: absolute;
+  width: 410px;
+  height: 434px;
+  top: 20vh;
+  left: 930px;
+  gap: 32px;
+
+}
+
+.HeaderLayout {
+  display: flex;
+  gap: 10px;
+}
+
+#JoinIntext {
+  width: 69px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #939CA3;
+  cursor: pointer;
+
+}
+
+#SignIntext {
+  cursor: pointer;
+  color: #8064A2;
+  text-decoration: underline solid 2px;
+  width: 69px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+.googleBtn {
+
+  display: flex;
+  gap: 15vh;
+  cursor: pointer;
+  background-color: #F7F5F9;
+  width: 410px;
+  height: 40px;
+  padding: 12px, 128px, 12px, 24px;
+  border-radius: 8px;
+  border: 1px solid #8064A2;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+.facebookIcon {
+  top: 16vh;
+  right: 36vh;
+}
+
+.inputFields {
+  color: #939CA3;
+  width: 410px;
+  height: 40px;
+  padding: 12px, 365px, 12px, 12px;
+  border-radius: 8px;
+  border: 1px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+}
+
+.inputFields:placeholder-shown {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+
+}
+
+#eyeslash {
+  position: absolute;
+  cursor: pointer;
+  margin-top: -40px;
+  margin-left: 50vh;
+  color: #939CA3;
+  cursor: pointer;
+}
+
+
+.midFormText::after {
+  content: "----------------------------";
+}
+
+.midFormText::before {
+  content: "----------------------------";
+}
+
+
+.resetPass {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-top: -3vh;
+}
+
+
+#submitForm {
+  cursor: pointer;
+  background-color: #F7F5F9;
+  width: 410px;
+  height: 40px;
+  padding: 12px, 128px, 12px, 24px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Cards Styling */
+
+.Cards {
+  margin-top: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Card {
+  background-color: #FFFFFF;
+  width: calc(608px - 10px);
+  /* 50% width with 20px spacing between cards */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+
+}
+
+
+.PeopleCard {
+  background-color: #FFFFFF;
+  width: calc(608px - 10px);
+  /* 50% width with 20px spacing between cards */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+}
+
+.PeopleCard p {
+  width: 520px;
+  height: 81px;
+  margin-left: 40px;
+}
+
+.PeopleCard:hover {
+  color: #FFFFFF;
+  background-color: #8064A2;
+}
+
+
+.PlaceCard {
+  background-color: #FFFFFF;
+  width: calc(608px - 10px);
+  /* 50% width with 20px spacing between cards */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+}
+
+.PlaceCard p {
+  width: 520px;
+  height: 81px;
+  margin-left: 40px;
+}
+
+.PlaceCard:hover {
+  color: #FFFFFF;
+  background-color: #77933C;
+}
+
+
+
+.ProductCard {
+  background-color: #FFFFFF;
+  width: calc(608px - 10px);
+  /* 50% width with 20px spacing between cards */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+}
+
+.ProductCard p {
+  width: 520px;
+  height: 81px;
+  margin-left: 40px;
+}
+
+.ProductCard:hover {
+  color: #FFFFFF;
+  background-color: #C0504D;
+}
+
+.ProgramCard {
+  background-color: #FFFFFF;
+  width: calc(608px - 10px);
+  /* 50% width with 20px spacing between cards */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+}
+
+.ProgramCard p {
+  width: 520px;
+  height: 81px;
+  margin-left: 40px;
+}
+
+.ProgramCard:hover {
+  color: #FFFFFF;
+  background-color: #0096C8;
+}
+
+
+
+
+
+
+.Card p {
+  width: 520px;
+  height: 81px;
+  margin-left: 40px;
+}
+
+.CardHeading {
+  display: flex;
+  gap: 10px;
+  padding-left: 40px;
+
+}
+
+.CardHeading svg {
+  width: 35px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.CardHeading img {
+  object-fit: contain;
+}
+
+
+
+.cardBtn {
+  cursor: pointer;
+  width: 122px;
+  height: 40px;
+  padding: 12px, 31px, 12px, 30px;
+  border-radius: 8px;
+  border: 1px solid #8064A2;
+  margin-left: 40px;
+
+}
+
+.customCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 484px;
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: #F7FDFF;
+
+
+}
+
+.customSubCard {
+  background-color: #FFFFFF;
+  width: 1240px;
+  height: 284px;
+  border-radius: 8px;
+  border: 1px solid #CED4DA;
+
+
+
+}
+
+.customCardText {
+
+  margin-left: 40px;
+
+}
+
+.customCard p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+}
+
+#customCardBtn {
+  cursor: pointer;
+  width: 121px;
+  height: 40px;
+  padding: 12px, 29px, 12px, 29px;
+  border-radius: 8px;
+  color: #8064A2;
+  border: 1px solid #8064A2;
+  gap: 10px;
+
+
+}
+
+
+.testimonials {
+  width: 1440px;
+  height: 672px;
+  padding: 100px;
+  background-color: #FFFFFF;
+}
+
+.testimonialcontainer {
+  width: 1240px;
+  height: 472px;
+  border-radius: 8px;
+  background-color: #F7F5F9;
+
+}
+
+.testimonialcontent {
+  padding: 40px;
+}
+
+.testimonialcontent p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #6D747A;
+
+}
+
+.testimonialaudio {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 756px;
+  height: 80px;
+  border-radius: 8px;
+  background-color:
+    #CCC1DA;
+
+}
+
+.testimonialimg {
+  width: 100px;
+  height: 100px;
+  margin-left: 55vw;
+  margin-top: -10vw;
+
+}
+
+.testimonialaudiotext {
+  color: #8064A2;
+  margin-top: -15vh;
+  margin-left: 121vh;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+}
+
+
+
+
+
+
+/* Connect Page */
+
+
+
+.connect {
+  width: 1440px;
+  height: 662px;
+  padding: 100px;
+  margin-top: -20vh;
+  background-color: #F7FDFF;
+}
+
+.connectText {
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.connectBtn {
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #8064A2;
+  color: #ffff;
+
+  width: 147px;
+  height: 46px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+
+}
+
+#connectimg {
+  margin-top: 25vh;
+}
+
+#circle {
+  cursor: pointer;
+  margin-left: 80vw;
+  margin-top: -20px;
+}
+
+#arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 143px;
+}
+
+.connect h5 {
+  width: fit-content;
+  box-shadow: 0px 0px 5px 0px #78787824;
+  color: #8064A2;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 78vw;
+
+}
+
+
+
+
+
+/* Links Styling */
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+
+
+.links h2 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+.links li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.links li a {
+  color: #08090A;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  text-align: left;
+
+}
+
+.social {
+  display: inline-block;
+}
+
+
+.social a img {
+  margin-right: 10px;
+}
+
+.social input {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #8064A2;
+  background: transparent;
+}
+
+.social h3 {
+  width: 98px;
+  height: 18px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+
+}
+
+
+.rectangle {
+  width: 59px;
+  height: 40px;
+  background-color: #8064A2;
+  margin-left: 306px;
+  margin-top: -58px;
+  border-radius: 0px, 8px, 8px, 8px;
+
+}
+
+.rectangle h4 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  text-align: center;
+  color: #FFFFFF;
+
+
+}
+
+footer {
+  width: 100vw;
+  height: 78px;
+  background-color: #F7F5F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer h2 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  text-align: center;
+
+
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .searchBar {
+    width: 100%;
+    left: 0;
+    margin-bottom: 1rem;
+  }
+
+  #searchBarFill {
+    left: 0;
+  }
+
+  .homeForm {
+    position: static;
+    width: 100%;
+    left: 0;
+    margin-top: 1rem;
+  }
+
+  .googleBtn {
+    gap: 1rem;
+  }
+
+  .Cards,
+  .PeopleCard {
+    width: 100%;
+  }
+
+  .customCard,
+  .customSubCard,
+  .testimonials,
+  .connect {
+    padding: 20px;
+  }
+
+  .customCardText {
+    margin-left: 0;
+  }
+
+  .testimonialimg {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .testimonialaudiotext {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .connect h5 {
+    margin-left: 0;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
